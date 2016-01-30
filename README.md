@@ -1,6 +1,6 @@
 # VIMVideoPlayer
 
-`VIMVideoPlayer` is a simple wrapper around the [`AVPlayer`](https://developer.apple.com/library/prerelease/ios/documentation/AVFoundation/Reference/AVPlayer_Class/index.html) and [`AVPlayerLayer`](https://developer.apple.com/library/prerelease/ios/documentation/AVFoundation/Reference/AVPlayerLayer_Class/index.html#//apple_ref/occ/cl/AVPlayerLayer) classes. Check out the [Pegasus](https://github.com/vimeo/Pegasus) project for a demo. 
+`VIMVideoPlayer` is a simple wrapper around the [`AVPlayer`](https://developer.apple.com/library/prerelease/ios/documentation/AVFoundation/Reference/AVPlayer_Class/index.html) and [`AVPlayerLayer`](https://developer.apple.com/library/prerelease/ios/documentation/AVFoundation/Reference/AVPlayerLayer_Class/index.html#//apple_ref/occ/cl/AVPlayerLayer) classes.
 
 ![img](https://raw.githubusercontent.com/fdddf/VIMVideoPlayer/master/screenshot.png)
 
@@ -8,12 +8,14 @@
 Add playback controls on the player view; 
 Add Swipe gesture to up or down volume and move backward or forward.
 Auto dimiss control bar view with animation.
+Remove duplicated delegates in player view;
 
 ## Usage
 
 Check the example project please.
 
 ## Todo
+Add CocoaPods support.
 Add buffer text tips 
 
 ## License
