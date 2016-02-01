@@ -57,14 +57,16 @@
 {
     if(UIInterfaceOrientationIsPortrait(fromInterfaceOrientation)){
         self.originFrame = self.videoPlayerView.frame;
-        self.videoPlayerView.frame = CGRectMake(0, 0, CGRectGetWidth(self.view.frame), CGRectGetHeight(self.view.frame));
-        [[UIApplication sharedApplication] setStatusBarHidden:YES withAnimation:UIStatusBarAnimationFade];
+        self.videoPlayerView.frame = [[UIApplication sharedApplication].keyWindow frame];
         self.isFullscreenMode = YES;
+        [self.videoPlayerView removeFromSuperview];
+        [[UIApplication sharedApplication].keyWindow addSubview:self.videoPlayerView];
         
-    }else if(UIInterfaceOrientationIsLandscape(fromInterfaceOrientation)){
+    }else if(UIInterfaceOrientationIsLandscape(fromInterfaceOrientation) && UIInterfaceOrientationIsPortrait(self.interfaceOrientation)){
         self.videoPlayerView.frame = self.originFrame;
-        [[UIApplication sharedApplication] setStatusBarHidden:NO withAnimation:UIStatusBarAnimationFade];
         self.isFullscreenMode = NO;
+        [self.videoPlayerView removeFromSuperview];
+        [self.view addSubview:self.videoPlayerView];
     }
 }
 
