@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
 
-  s.name         = "VIMVideoPlayer"
+  s.name         = "FVIMVideoPlayer"
   s.version      = "5.7.0"
   s.summary      = "A simple wrapper around the AVPlayer and AVPlayerLayer classes."
   s.description  = <<-DESC
