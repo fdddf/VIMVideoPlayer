@@ -35,10 +35,7 @@ s.ios.deployment_target = "7.0"
   s.source       = { :git => "https://github.com/fdddf/VIMVideoPlayer.git", :tag => s.version.to_s }
   s.source_files  = "VIMVideoPlayer", "VIMVideoPlayer/*.{h,m}"
   s.exclude_files = "VIMVideoPlayer/Exclude"
-  s.resource_bundles = {
-  	'VIMLib' => ['VIMVideoPlayer/*.png']
-  }
-
+  s.resources = "VIMVideoPlayer/*.png"
   s.requires_arc = true
 
 end
