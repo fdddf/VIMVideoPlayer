@@ -15,7 +15,6 @@ Remove duplicated delegates in player view;
 Check the example project please.
 
 ## Todo
-Add CocoaPods support.
 Add buffer text tips 
 
 ## License
