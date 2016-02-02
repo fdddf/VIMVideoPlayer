@@ -5,10 +5,14 @@
 ![img](https://raw.githubusercontent.com/fdddf/VIMVideoPlayer/master/screenshot.png)
 
 ## Changes
-Add playback controls on the player view; 
-Add Swipe gesture to up or down volume and move backward or forward.
-Auto dimiss control bar view with animation.
-Remove duplicated delegates in player view;
+1. Add playback controls on the player view; 
+2. Add Swipe gesture to up or down volume and move backward or forward.
+3. Auto dimiss control bar view with animation.
+4. Remove duplicated delegates in player view;
+
+## What's the example project include
+1. Shows a video player using with table view
+2. Fullscreen control
 
 ## Usage
 
