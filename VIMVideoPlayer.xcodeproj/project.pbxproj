@@ -19,6 +19,14 @@
 		047D2D5E1C5C5CC900594FCA /* VideoPlayerPause@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 047D2D581C5C576400594FCA /* VideoPlayerPause@2x.png */; };
 		047D2D5F1C5C5CC900594FCA /* VideoPlayerPlay@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 047D2D591C5C576400594FCA /* VideoPlayerPlay@2x.png */; };
 		047D2D601C5C5CC900594FCA /* VideoProgressThumb@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 047D2D5A1C5C576400594FCA /* VideoProgressThumb@2x.png */; };
+		0481759A1C60413E00C5D188 /* VideoFullscreen@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 047D2D571C5C576400594FCA /* VideoFullscreen@2x.png */; };
+		0481759B1C60413E00C5D188 /* VideoPlayerPause@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 047D2D581C5C576400594FCA /* VideoPlayerPause@2x.png */; };
+		0481759C1C60413E00C5D188 /* VideoPlayerPlay@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 047D2D591C5C576400594FCA /* VideoPlayerPlay@2x.png */; };
+		0481759D1C60413E00C5D188 /* VideoProgressThumb@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 047D2D5A1C5C576400594FCA /* VideoProgressThumb@2x.png */; };
+		0481759E1C60417500C5D188 /* VideoFullscreen@2x.png in CopyFiles */ = {isa = PBXBuildFile; fileRef = 047D2D571C5C576400594FCA /* VideoFullscreen@2x.png */; };
+		0481759F1C60417500C5D188 /* VideoPlayerPause@2x.png in CopyFiles */ = {isa = PBXBuildFile; fileRef = 047D2D581C5C576400594FCA /* VideoPlayerPause@2x.png */; };
+		048175A01C60417500C5D188 /* VideoPlayerPlay@2x.png in CopyFiles */ = {isa = PBXBuildFile; fileRef = 047D2D591C5C576400594FCA /* VideoPlayerPlay@2x.png */; };
+		048175A11C60417500C5D188 /* VideoProgressThumb@2x.png in CopyFiles */ = {isa = PBXBuildFile; fileRef = 047D2D5A1C5C576400594FCA /* VideoProgressThumb@2x.png */; };
 		501A3B931BA205A20059040B /* VIMVideoPlayerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 501A3B921BA205A20059040B /* VIMVideoPlayerTests.m */; };
 		501A3B951BA205A20059040B /* libVIMVideoPlayer.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 50E507001B1E23A600DF1F7A /* libVIMVideoPlayer.a */; };
 		50E5071E1B1E23E100DF1F7A /* VIMVideoPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 50E5071B1B1E23E100DF1F7A /* VIMVideoPlayer.m */; };
@@ -44,9 +52,13 @@
 		50E506FE1B1E23A600DF1F7A /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
-			dstPath = "include/$(PRODUCT_NAME)";
-			dstSubfolderSpec = 16;
+			dstPath = Resources;
+			dstSubfolderSpec = 7;
 			files = (
+				0481759E1C60417500C5D188 /* VideoFullscreen@2x.png in CopyFiles */,
+				0481759F1C60417500C5D188 /* VideoPlayerPause@2x.png in CopyFiles */,
+				048175A01C60417500C5D188 /* VideoPlayerPlay@2x.png in CopyFiles */,
+				048175A11C60417500C5D188 /* VideoProgressThumb@2x.png in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -348,6 +360,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0481759A1C60413E00C5D188 /* VideoFullscreen@2x.png in Resources */,
+				0481759B1C60413E00C5D188 /* VideoPlayerPause@2x.png in Resources */,
+				0481759C1C60413E00C5D188 /* VideoPlayerPlay@2x.png in Resources */,
+				0481759D1C60413E00C5D188 /* VideoProgressThumb@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -627,6 +643,7 @@
 				047D2D551C5C56F500594FCA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		501A3B981BA205A20059040B /* Build configuration list for PBXNativeTarget "VIMVideoPlayerTests" */ = {
 			isa = XCConfigurationList;

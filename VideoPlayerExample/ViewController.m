@@ -73,26 +73,25 @@
 - (void)viewWillTransitionToSize:(CGSize)size withTransitionCoordinator:(id<UIViewControllerTransitionCoordinator>)coordinator
 {
     [super viewWillTransitionToSize:size withTransitionCoordinator:coordinator];
-    NSLog(@"%@", NSStringFromCGSize(size));
     
+    UIInterfaceOrientation fromInterfaceOrientation = [UIApplication sharedApplication].statusBarOrientation;
     [coordinator animateAlongsideTransition:^(id<UIViewControllerTransitionCoordinatorContext>  _Nonnull context) {
-        if(! self.isFullscreenMode){
+        if(UIInterfaceOrientationIsPortrait(fromInterfaceOrientation)){
             self.originFrame = self.videoPlayerView.frame;
             self.videoPlayerView.frame = [[UIApplication sharedApplication].keyWindow frame];
-        }else{
+        }else if(UIInterfaceOrientationIsLandscape(fromInterfaceOrientation) && UIInterfaceOrientationIsPortrait(self.interfaceOrientation)){
             self.videoPlayerView.frame = self.originFrame;
         }
     } completion:^(id<UIViewControllerTransitionCoordinatorContext>  _Nonnull context) {
-        if(! self.isFullscreenMode){
+        if(UIInterfaceOrientationIsPortrait(fromInterfaceOrientation)){
             self.isFullscreenMode = YES;
             [self.videoPlayerView removeFromSuperview];
             
             [[UIApplication sharedApplication].keyWindow addSubview:self.videoPlayerView];
-        }else{
+        }else if(UIInterfaceOrientationIsLandscape(fromInterfaceOrientation) && UIInterfaceOrientationIsPortrait(self.interfaceOrientation)){
             self.isFullscreenMode = NO;
             [self.videoPlayerView removeFromSuperview];
             [self.view addSubview:self.videoPlayerView];
-            
         }
     }];
 }
